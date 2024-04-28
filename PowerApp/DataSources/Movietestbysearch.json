@@ -1,0 +1,8 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_movie-20test-20by-20search-5f5d055763c5aa7577-5f7bf81411aac31cb1",
+    "Name": "Movietestbysearch",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo"
+  }
+]

@@ -1,0 +1,298 @@
+MovieDetails As screen:
+    Fill: =RGBA(24, 24, 35, 1)
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: =
+
+    ContainerMain3s As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =691
+        Width: =1366
+        Y: =76
+        ZIndex: =2
+
+        MoviePoster As image:
+            BorderColor: =RGBA(255, 255, 0, 1)
+            BorderThickness: =1
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =531
+            Image: =IdForMoreInfo.Poster
+            OnSelect: =
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =365
+            X: =30
+            Y: =14
+            ZIndex: =1
+
+        PlotLabel As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(152, 208, 70, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Size: =15
+            Text: ="Plot"
+            X: =422
+            Y: =308
+            ZIndex: =6
+
+        Label1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =62
+            LineHeight: =1
+            Size: =25
+            Text: =IdForMoreInfo.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =925
+            X: =422
+            Y: =14
+            ZIndex: =7
+
+        Label2 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(217, 217, 217, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =53
+            LineHeight: =1
+            Size: =20
+            Text: =IdForMoreInfo.Released & " | " & IdForMoreInfo.Genre & " | " & IdForMoreInfo.Runtime
+            VerticalAlign: =VerticalAlign.Top
+            Width: =925
+            X: =422
+            Y: =76
+            ZIndex: =8
+
+        Label3 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(217, 217, 217, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Size: =18
+            Text: =IdForMoreInfo.imdbRating
+            Width: =65
+            X: =759
+            Y: =141
+            ZIndex: =9
+
+        Rating1 As rating:
+            BorderColor: =RGBA(255, 255, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            Default: =(IdForMoreInfo.imdbRating)/2
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =Self.Fill
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =Self.BorderColor
+            FocusedBorderThickness: =2
+            Height: =40
+            HoverFill: =Self.Fill
+            Max: =5
+            PressedFill: =Self.Fill
+            RatingFill: =RGBA(255, 255, 0, 1)
+            Width: =200
+            X: =825
+            Y: =141
+            ZIndex: =10
+
+        PlotLabel_1 As label:
+            Align: =Align.Justify
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(152, 208, 70, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            Size: =15
+            Text: |-
+                ="Director :"
+            Width: =96
+            X: =422
+            Y: =241
+            ZIndex: =11
+
+        Label4 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =42
+            LineHeight: =1.4
+            Size: =13
+            Text: =IdForMoreInfo.Director
+            VerticalAlign: =VerticalAlign.Top
+            Width: =467
+            X: =422
+            Y: =278
+            ZIndex: =12
+
+        PlotLabel_2 As label:
+            Align: =Align.Justify
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(152, 208, 70, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            Size: =15
+            Text: |-
+                ="Actors :"
+            Width: =96
+            X: =422
+            Y: =181
+            ZIndex: =13
+
+        Label4_1 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =42
+            LineHeight: =1.4
+            Size: =13
+            Text: =IdForMoreInfo.Actors
+            VerticalAlign: =VerticalAlign.Top
+            Width: =925
+            X: =422
+            Y: =212
+            ZIndex: =14
+
+        PlotLabel_3 As label:
+            Align: =Align.Justify
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(152, 208, 70, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =38
+            Size: =15
+            Text: |-
+                ="Language :"
+            Width: =134
+            X: =422
+            Y: =436
+            ZIndex: =15
+
+        Label4_2 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =42
+            LineHeight: =1.4
+            Size: =13
+            Text: =IdForMoreInfo.Language
+            VerticalAlign: =VerticalAlign.Top
+            Width: =925
+            X: =422
+            Y: =472
+            ZIndex: =16
+
+        BookmarkBtn As Button:
+            Appearance: ='ButtonCanvas.Appearance'.Primary
+            BasePaletteColor: =RGBA(189, 178, 176, 1)
+            DisplayMode: |-
+                =If(
+                    BookmarkBtn.Text = "Saved",
+                    DisplayMode.Disabled,
+                    DisplayMode.Edit
+                )
+            Font: =Font.'Segoe UI'
+            FontColor: =
+            FontSize: =30
+            FontWeight: =FontWeight.Bold
+            Height: =54
+            OnSelect: |-
+                =// Collect(SelectedMovie, IdForMoreInfo);
+                
+                Patch(
+                    Bookmark,
+                    {
+                        imdbIDB:IdForMoreInfo.imdbID,
+                        UserName:User().FullName, 
+                        YearB:IdForMoreInfo.Year, 
+                        GenreB:IdForMoreInfo.Genre,
+                        MovieTitleB:IdForMoreInfo.Title,
+                        PosterB:IdForMoreInfo.Poster
+                        }
+                    )
+            Text: |-
+                =If(
+                    !IsBlank(LookUp(Bookmark, imdbIDB = IdForMoreInfo.imdbID, imdbIDB )),
+                    "Saved",
+                    "Bookmark"
+                )
+            Visible: =true
+            Width: =310
+            X: =729
+            Y: =545
+            ZIndex: =17
+
+    HeaderContainer_3 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =76
+        Width: =1366
+        ZIndex: =4
+
+        Header_3 As Header:
+            BasePaletteColor: =RGBA(0, 0, 0, 80)
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =
+            Height: =73
+            IsProfilePictureVisible: =false
+            Logo: =ON_REV_LOGO_RGB
+            LogoTooltip: ="Ontario"
+            OnSelectLogo: =false
+            Style: ='Header.Style'.Primary
+            Title: =""
+            UserEmail: =User().Email
+            UserImage: =User().Image
+            UserName: =User().FullName
+            Visible: =true
+            Width: =1366
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        BackArrow_1 As arrow.backArrow:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =69
+            OnSelect: =Navigate(MovieResultScreen, ScreenTransition.Fade)
+            Width: =67
+            X: =1286
+            Y: =3
+            ZIndex: =2
+
+    TextInput1 As text:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderThickness: =0
+        Color: =RGBA(255, 255, 255, 1)
+        Default: =IdForMoreInfo.Plot
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =100
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        LineHeight: =1.3
+        Mode: =TextMode.MultiLine
+        Size: =13
+        Width: =894
+        X: =414
+        Y: =412
+        ZIndex: =5
+

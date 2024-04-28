@@ -1,0 +1,74 @@
+{
+  "0892bfb0-44b1-49e8-92ec-9c52ce8616b4": {
+    "appActions": [
+      "GetAllsearchResultsByTitle"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Movie test by title",
+      "iconUri": "https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_movie-20test-20by-20title-5f5d055763c5aa7577-5f7bf81411aac31cb1",
+      "isCustomApiConnection": true,
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Movietestbytitle"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "0892bfb0-44b1-49e8-92ec-9c52ce8616b4"
+  },
+  "1b312a40-c135-4d6f-bdab-cfa16104b57c": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write",
+      "providers/PowerPlatform.Governance/Operations/Delete"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1685/1.0.1685.3700/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://gandhiyakshi123gmailcom-my.sharepoint.com/personal/admin_gandhiyakshi123gmailcom_onmicrosoft_com": {
+        "dataSources": {
+          "Bookmark": {
+            "tableName": "639cbd6a-ede2-4d0b-9da2-b4adf65c4491"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Bookmark"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "1b312a40-c135-4d6f-bdab-cfa16104b57c"
+  },
+  "923f53dd-eca1-4aed-a0b3-c2f19de08da9": {
+    "appActions": [
+      "GetAllsearchResultsBySearch"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Movie test by search",
+      "iconUri": "https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_movie-20test-20by-20search-5f5d055763c5aa7577-5f7bf81411aac31cb1",
+      "isCustomApiConnection": true,
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Movietestbysearch"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "923f53dd-eca1-4aed-a0b3-c2f19de08da9"
+  }
+}

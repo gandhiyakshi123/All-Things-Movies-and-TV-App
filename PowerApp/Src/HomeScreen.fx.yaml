@@ -1,0 +1,124 @@
+HomeScreen As screen:
+    Fill: =RGBA(24, 24, 35, 1)
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    SearchLbl As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =136
+        Size: =35
+        Text: ="Find your favourite Movies"
+        Width: =695
+        X: =335
+        Y: =183
+        ZIndex: =1
+
+    SearchContainer As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(0, 0, 0, 0.8)
+        Height: =80
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        Width: =700
+        X: =335
+        Y: =329
+        ZIndex: =2
+
+        SearchInput As text:
+            Align: =Align.Justify
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderThickness: =2
+            Clear: =true
+            Color: =RGBA(0, 0, 0, 0.8)
+            Default: =""
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FillPortions: =1
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =70
+            HintText: ="Search"
+            HoverBorderColor: =RGBA(32, 54, 71, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(205, 209, 213, 1)
+            LayoutMinHeight: =80
+            OnChange: =
+            OnSelect: =
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Size: =20
+            Width: =620
+            X: =335
+            Y: =350
+            ZIndex: =1
+
+        SearchIcon As icon.Search:
+            BorderColor: =RGBA(132, 40, 38, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0.8)
+            FocusedBorderThickness: =0
+            Height: =70
+            Icon: =Icon.Search
+            OnSelect: |
+                =Set(SearchResultsbySearch, (Movietestbysearch.GetAllsearchResultsBySearch({s:SearchInput.Text})));
+                
+                Navigate(MovieResultScreen, ScreenTransition.Fade);
+            Width: =80
+            X: =930
+            Y: =350
+            ZIndex: =2
+
+    HeaderContainer As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(0, 0, 0, 80)
+        Height: =76
+        Width: =1366
+        ZIndex: =3
+
+        Header As Header:
+            BasePaletteColor: =RGBA(189, 178, 176, 1)
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =
+            Height: =76
+            IsProfilePictureVisible: =false
+            Logo: =ON_REV_LOGO_RGB
+            LogoTooltip: ="Ontario"
+            OnSelectLogo: =false
+            Style: ='Header.Style'.Primary
+            Title: =""
+            UserEmail: =User().Email
+            UserImage: =User().Image
+            UserName: =User().FullName
+            Visible: =true
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+    Icon2 As icon.BookmarkFilled:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.BookmarkFilled
+        OnSelect: |
+            =Navigate(BookmarkScreen, ScreenTransition.Fade);
+        X: =1218
+        Y: =132
+        ZIndex: =4
+

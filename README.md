@@ -14,4 +14,6 @@
 
 ● When a card within the gallery control is clicked, a detailed view of the selected movie or tv title is displayed. You can see the additional information in this ‘detail’ view.
 
+● The app is accessibility compliant to WCAG 2.0 Level AA (as much as the Power Platform will support out of the box).
+
 ● Authenticated users (those I have shared the app with) can search and add a new movie or tv series to the existing default list. The App will remember the user's additions and allow the user to remove the movie or tv series at a later date.
